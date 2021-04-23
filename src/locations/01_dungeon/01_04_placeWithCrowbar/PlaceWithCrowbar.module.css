@@ -1,0 +1,16 @@
+.placeWithCrowbar {
+    height: 700px;
+    background-image: url(https://galerija.speleo.lt/d/21897-2/IMG_2095_1.JPG);
+    background-size: cover;
+}
+.crowbar {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 450px;
+    left: 700px;
+}
+.crowbar img {
+    width: 70px;
+    height: 70px;
+}

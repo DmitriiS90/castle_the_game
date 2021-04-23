@@ -1,0 +1,56 @@
+.startLocationOpenDoor {
+    height: 700px;
+    background-image: url(./../../../images/locations/02_startLocationOpenDoor.jpg);
+    background-size: cover;
+}
+.passage {
+    position: absolute;
+    top: 300px;
+    left: 620px;
+}
+.passage .linkButton {
+    height: 220px;
+    width: 100px;
+}
+.passage .linkButton button {
+    height: 110px;
+    width: 50px;
+    opacity: 0;
+}
+.menuPassage {
+    border: black 1px solid;
+    background-color: cornsilk;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s ease 0.5s;
+}
+.linkButton:hover~ .menuPassage {
+    opacity: 1;
+    visibility: visible
+}
+/* ///////////////////////// */
+.passage2 {
+    position: absolute;
+    top: 150px;
+    left: 255px;
+}
+.passage2 .linkButton {
+    height: 400px;
+    width: 100px;
+}
+.passage2 .linkButton button {
+    height: 110px;
+    width: 50px;
+    opacity: 0;
+}
+.menuPassage {
+    border: black 1px solid;
+    background-color: cornsilk;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s ease 0.5s;
+}
+.linkButton:hover~ .menuPassage {
+    opacity: 1;
+    visibility: visible
+}

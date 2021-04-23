@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import { Route } from 'react-router-dom';
 import './App.css';
+import Inventory from './components/inventory/inventory';
+import StartLocation from './locations/01_dungeon/01_01_startLocation/StartLocation';
+import StartLocationOpenDoor from './locations/01_dungeon/01_02_startLocationOpenDoor/StartLocationOpenDoor';
+import Deadlock from './locations/01_dungeon/01_03_deadlock/Deadlock';
+import PlaceWithCrowbar from './locations/01_dungeon/01_04_placeWithCrowbar/PlaceWithCrowbar';
+import Prison from './locations/02_prison/02_01_prison/Prison';
+import Location2 from './locations/location2/Location2';
+import MenInPrison from './locations/02_prison/02_02_menInPrison/MenInPrison';
+import Skeletons from './locations/02_prison/02_03_skeletons/Skeletons';
+import RoomWithGuards from './locations/03_guardiens/03_01_roomWithGuards/RoomWithGuards';
 
-function App() {
+const App = (props) => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route exact path='/' render={() => <StartLocation/>} />
+      <Route exact path='/startLocationOpenDoor' render={() => <StartLocationOpenDoor/>} />
+      <Route exact path='/deadlock' render={() => <Deadlock/>} />
+      <Route exact path='/placeWithCrowbar' render={() => <PlaceWithCrowbar/>} />
+      <Route path='/prison' render={() => <Prison/>} />
+      <Route path='/menInPrison' render={() => <MenInPrison/>} />
+      <Route path='/skeletons' render={() => <Skeletons/>} />
+      <Route path='/roomWithGuards' render={() => <RoomWithGuards/>} />
+      <Route path='/location2' render={() => <Location2/>} />
+      <Inventory/>
     </div>
   );
 }

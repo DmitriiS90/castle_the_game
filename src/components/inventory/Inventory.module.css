@@ -1,0 +1,17 @@
+.inventory {
+    background-color: rgb(223, 169, 169);
+    width: 1000px;
+    height: 100px;
+}
+.inventory img {
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+}
+.cell {
+    display: inline-block;
+    border: black 10px solid;
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+}

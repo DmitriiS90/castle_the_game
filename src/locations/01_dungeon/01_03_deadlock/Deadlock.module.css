@@ -1,0 +1,12 @@
+.Deadlock {
+    height: 700px;
+    background-image: url(./../../../images/locations/03_deadlock.jpg);
+    background-size: cover;
+}
+.Deadlock p {
+    margin: 0 auto;
+    width: 700px;
+    background-color: rgb(173, 195, 236);
+    border-radius: 15px;
+    border: 7px black solid
+}

@@ -1,0 +1,14 @@
+.way {
+    width: 200px;
+    height: 40px;
+}
+.way button {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(173, 195, 236);
+    border-radius: 15px;
+    border: 7px black solid
+}
+.way button:hover {
+    background-color: rgb(228, 92, 74);
+}

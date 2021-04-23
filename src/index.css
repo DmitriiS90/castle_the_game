@@ -1,10 +1,15 @@
-body {
+html, body {
+  background-image: url(http://kartik.ru/wp-content/uploads/2017/09/kartinki-zamkov-narisovannye-karandashom-139122.jpg);
+  height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+#root {
+  height: 100%;
 }
 
 code {
