@@ -1,12 +1,19 @@
 .inventory {
-    background-color: rgb(223, 169, 169);
+    background-image: url(https://st2.depositphotos.com/1785433/5267/i/950/depositphotos_52676455-stock-photo-old-weathered-stained-blue-brick.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: contain; 
     width: 1000px;
     height: 100px;
+    text-align: right;
 }
 .inventory img {
     border-radius: 10px;
     width: 80px;
     height: 80px;
+}
+.inventory p {
+    font-weight: bold;
+    font-size: 30px;
 }
 .cell {
     display: inline-block;
@@ -14,4 +21,9 @@
     border-radius: 20px;
     width: 80px;
     height: 80px;
+}
+.inventory .inventoryImg {
+    border: black 5px solid;
+    width: 90px;
+    height: 90px;
 }

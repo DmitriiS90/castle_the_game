@@ -1,17 +1,22 @@
-const SET_KEY = 'SET_KEY'
-
 const initialState = {
+    isClick: false,
     key: false,
     crowbar: false
 };
 
 const inventoryReducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'SET_KEY1':
+        case 'SET_INVENTORY':
             //debugger
             return {
                 ...state,
-                key: true
+                isClick: true
+            }
+        case 'REMOVE_INVENTORY':
+            //debugger
+            return {
+                ...state,
+                isClick: false
             }
         case 'SET_CROWBAR':
             //debugger
@@ -30,6 +35,6 @@ const inventoryReducer = (state = initialState, action) => {
     }
 };
 
-export const setKey = (key) => {return {type: SET_KEY, key}};
+//export const setKey = (key) => {return {type: SET_KEY, key}};
 
 export default inventoryReducer;

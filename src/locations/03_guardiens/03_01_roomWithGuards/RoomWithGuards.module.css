@@ -3,3 +3,16 @@
     background-image: url(https://tes-game.ru/uploads/posts/2018-03/29756201.jpg);
     background-size: cover;
 }
+.roomWithGuards p, .roomWithGuards ol {
+    margin: 0 auto;
+    width: 700px;
+    background-color: rgb(173, 195, 236);
+    border-radius: 15px;
+    border: 7px black solid
+}
+.roomWithGuards ol {
+    width: 500px;
+}
+.roomWithGuards ol li:hover {
+    color: red;
+}

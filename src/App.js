@@ -10,6 +10,7 @@ import Location2 from './locations/location2/Location2';
 import MenInPrison from './locations/02_prison/02_02_menInPrison/MenInPrison';
 import Skeletons from './locations/02_prison/02_03_skeletons/Skeletons';
 import RoomWithGuards from './locations/03_guardiens/03_01_roomWithGuards/RoomWithGuards';
+import Room from './locations/03_guardiens/03_02_room/Room';
 
 const App = (props) => {
   return (
@@ -22,6 +23,7 @@ const App = (props) => {
       <Route path='/menInPrison' render={() => <MenInPrison/>} />
       <Route path='/skeletons' render={() => <Skeletons/>} />
       <Route path='/roomWithGuards' render={() => <RoomWithGuards/>} />
+      <Route path='/room' render={() => <Room/>} />
       <Route path='/location2' render={() => <Location2/>} />
       <Inventory/>
     </div>
