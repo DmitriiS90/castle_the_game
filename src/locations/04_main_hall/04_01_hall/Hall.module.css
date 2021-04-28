@@ -1,0 +1,37 @@
+.hall {
+    height: 700px;
+    background-image: url(http://pm1.narvii.com/7012/337dadf084b71d3387d3600755d24fffc4dc2ae0r1-1680-911v2_uhq.jpg);
+    background-size: cover;
+}
+.hall p, .hall ol {
+    margin: 0 auto;
+    width: 700px;
+    background-color: rgb(173, 195, 236);
+    border-radius: 15px;
+    border: 7px black solid
+}
+.hall ol li:hover {
+    color: red;
+}
+
+.inessa {
+    position:absolute;
+    top: 400px;
+    left: 300px;
+    width: 200px;
+    height: 200px;
+}
+.edvard {
+    position:absolute;
+    top: 260px;
+    left: 820px;
+    width: 60px;
+    height: 100px;
+}
+.karl {
+    position:absolute;
+    top: 380px;
+    left: 1150px;
+    width: 110px;
+    height: 210px;
+}

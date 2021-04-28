@@ -3,4 +3,63 @@
     background-image: url(./../../../images/locations/05_room.jpg);
     background-size: cover;
 }
-
+.room p, .room ol {
+    margin: 0 auto;
+    width: 700px;
+    background-color: rgb(173, 195, 236);
+    border-radius: 15px;
+    border: 7px black solid
+}
+/* ----------------------------- */
+.chest {
+    position: absolute;
+    top: 550px;
+    left: 370px;
+}
+.chest .linkButton {
+    height: 70px;
+    width: 120px;
+}
+.chest .linkButton button {
+    height: 110px;
+    width: 50px;
+    opacity: 0;
+}
+.menuChest {
+    border: black 1px solid;
+    background-color: cornsilk;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s ease 0.5s;
+}
+.linkButton:hover~ .menuChest {
+    opacity: 1;
+    visibility: visible
+}
+/* ------------------------------------- */
+.doorToNextRoom {
+    position: absolute;
+    top: 435px;
+    left: 860px;
+}
+.doorToNextRoom .linkButton {
+    height: 140px;
+    width: 65px;
+}
+.doorToNextRoom .linkButton button {
+    height: 110px;
+    width: 50px;
+    opacity: 0;
+}
+.menu {
+    border: black 1px solid;
+    background-color: cornsilk;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s ease 0.5s;
+}
+.linkButton:hover~ .menu {
+    opacity: 1;
+    visibility: visible
+}
+/* ------------------------------------- */

@@ -6,15 +6,18 @@ import StartLocationOpenDoor from './locations/01_dungeon/01_02_startLocationOpe
 import Deadlock from './locations/01_dungeon/01_03_deadlock/Deadlock';
 import PlaceWithCrowbar from './locations/01_dungeon/01_04_placeWithCrowbar/PlaceWithCrowbar';
 import Prison from './locations/02_prison/02_01_prison/Prison';
-import Location2 from './locations/location2/Location2';
 import MenInPrison from './locations/02_prison/02_02_menInPrison/MenInPrison';
 import Skeletons from './locations/02_prison/02_03_skeletons/Skeletons';
 import RoomWithGuards from './locations/03_guardiens/03_01_roomWithGuards/RoomWithGuards';
 import Room from './locations/03_guardiens/03_02_room/Room';
+import Hall from './locations/04_main_hall/04_01_hall/Hall';
+import Hallway from './locations/04_main_hall/04_02_hallway/Hallway';
+import KingsRoom from './locations/04_main_hall/04_03_kings_room/KingsRoom';
 
 const App = (props) => {
   return (
     <div className="App">
+      <Inventory/>
       <Route exact path='/' render={() => <StartLocation/>} />
       <Route exact path='/startLocationOpenDoor' render={() => <StartLocationOpenDoor/>} />
       <Route exact path='/deadlock' render={() => <Deadlock/>} />
@@ -23,9 +26,10 @@ const App = (props) => {
       <Route path='/menInPrison' render={() => <MenInPrison/>} />
       <Route path='/skeletons' render={() => <Skeletons/>} />
       <Route path='/roomWithGuards' render={() => <RoomWithGuards/>} />
-      <Route path='/room' render={() => <Room/>} />
-      <Route path='/location2' render={() => <Location2/>} />
-      <Inventory/>
+      <Route path='/room' render={() => <Room/>} />      
+      <Route path='/hall' render={() => <Hall/>} />      
+      <Route path='/hallway' render={() => <Hallway/>} />      
+      <Route path='/kingsRoom' render={() => <KingsRoom/>} />      
     </div>
   );
 }

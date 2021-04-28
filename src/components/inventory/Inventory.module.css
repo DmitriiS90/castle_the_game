@@ -1,7 +1,6 @@
 .inventory {
-    background-image: url(https://st2.depositphotos.com/1785433/5267/i/950/depositphotos_52676455-stock-photo-old-weathered-stained-blue-brick.jpg);
-    /* background-repeat: no-repeat; */
-    background-size: contain; 
+    position: absolute; 
+    top: 600px;
     width: 1000px;
     height: 100px;
     text-align: right;
@@ -27,3 +26,4 @@
     width: 90px;
     height: 90px;
 }
+

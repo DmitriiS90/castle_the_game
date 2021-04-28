@@ -1,8 +1,9 @@
 const initialState = {
     player: {
         isKing: false,
+        chest: 'locked',
         speechInPrison: ['В каком смысле жив? Я должен быть мертвым?', 'Кто ты? Как попал за решетку?', 'Серьезно', 'Красавец'],
-        speechWithGuards: ['Пропусти','Вы знаете, что со мной случилость', '111'],
+        speechWithGuards: ['Пропусти', 'Вы знаете, что со мной случилость', '111', 'Давай ключ'],
     },
     startText: {
         isClick: true,
@@ -14,7 +15,19 @@ const initialState = {
     },
     guards: {
         isClick: false,
-        speech: ['Стой, кто идет?. Ёпт, наш король!!'],
+        speech: ['Стой, кто идет?. Ёпт, наш король!!', 'Нужен ключ от сундука?'],
+    },
+    inessa: {
+        isClick: false,
+        speech: ['ЁЁЁЁЁЁп'],
+    },
+    edvard: {
+        isClick: false,
+        speech: ['Тыыы'],
+    },
+    karl: {
+        isClick: false,
+        speech: ['Чтоо'],
     },
 };
 
@@ -26,22 +39,59 @@ const personsReducer = (state = initialState, action) => {
                 startText: { isClick: false }
             }
         case 'MEN_IN_PRISON':
-            //debugger
             return {
                 ...state,
                 menInPrison: { ...state.menInPrison, isClick: true }
             }
         case 'GET_INFORMATION_ABOUT_MYSELF':
-            //debugger
             return {
                 ...state,
                 player: { ...state.player, isKing: true }
             }
         case 'GUARDS':
-            //debugger
             return {
                 ...state,
                 guards: { ...state.guards, isClick: true }
+            }
+        case 'CLICK_CHEST':
+            return {
+                ...state,
+                player: { ...state.player, chest: 'clicked' }
+            }
+        case 'CHEST_IS_OPENED':
+            return {
+                ...state,
+                player: { ...state.player, chest: 'opened' }
+            }
+        case 'TALK_TO_INESSA':
+            return {
+                ...state,
+                inessa: { ...state.inessa, isClick: true }
+            }
+        case 'OUT_FROM_INESSA':
+            return {
+                ...state,
+                inessa: { ...state.inessa, isClick: false }
+            }
+        case 'TALK_TO_EDVARD':
+            return {
+                ...state,
+                edvard: { ...state.edvard, isClick: true }
+            }
+        case 'OUT_FROM_EDVARD':
+            return {
+                ...state,
+                edvard: { ...state.edvard, isClick: false }
+            }
+        case 'TALK_TO_KARL':
+            return {
+                ...state,
+                karl: { ...state.karl, isClick: true }
+            }
+        case 'OUT_FROM_KARL':
+            return {
+                ...state,
+                karl: { ...state.karl, isClick: false }
             }
         default:
             return state;
