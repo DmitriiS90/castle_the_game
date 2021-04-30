@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/castle_the_game/static/css/main.e62ae4d6.chunk.css",
+    "main.js": "/castle_the_game/static/js/main.9917abb6.chunk.js",
+    "main.js.map": "/castle_the_game/static/js/main.9917abb6.chunk.js.map",
+    "runtime-main.js": "/castle_the_game/static/js/runtime-main.376e8a6b.js",
+    "runtime-main.js.map": "/castle_the_game/static/js/runtime-main.376e8a6b.js.map",
+    "static/js/2.130c25df.chunk.js": "/castle_the_game/static/js/2.130c25df.chunk.js",
+    "static/js/2.130c25df.chunk.js.map": "/castle_the_game/static/js/2.130c25df.chunk.js.map",
+    "static/js/3.9362aeef.chunk.js": "/castle_the_game/static/js/3.9362aeef.chunk.js",
+    "static/js/3.9362aeef.chunk.js.map": "/castle_the_game/static/js/3.9362aeef.chunk.js.map",
+    "index.html": "/castle_the_game/index.html",
+    "static/css/main.e62ae4d6.chunk.css.map": "/castle_the_game/static/css/main.e62ae4d6.chunk.css.map",
+    "static/js/2.130c25df.chunk.js.LICENSE.txt": "/castle_the_game/static/js/2.130c25df.chunk.js.LICENSE.txt",
+    "static/media/StartLocation.module.css": "/castle_the_game/static/media/01_start.4ea4cfe4.jpg",
+    "static/media/StartLocationOpenDoor.module.css": "/castle_the_game/static/media/02_startLocationOpenDoor.15b1ed54.jpg",
+    "static/media/Deadlock.module.css": "/castle_the_game/static/media/03_deadlock.e806a617.jpg",
+    "static/media/Room.module.css": "/castle_the_game/static/media/05_room.68e212cc.jpg",
+    "static/media/Prison.module.css": "/castle_the_game/static/media/location1.095f2869.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.376e8a6b.js",
+    "static/js/2.130c25df.chunk.js",
+    "static/css/main.e62ae4d6.chunk.css",
+    "static/js/main.9917abb6.chunk.js"
+  ]
+}
