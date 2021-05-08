@@ -6,7 +6,7 @@ const Inventory = (props) => {
     const dispatch = useDispatch()
 
     //const inventory = useSelector((state) => { return state.inventory})
-    console.log(props.inventory)
+    //console.log(props.inventory)
 
     return (
 

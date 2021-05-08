@@ -7,7 +7,7 @@ import Way from '../../../components/way/Way';
 const StartLocationOpenDoor = (props) => {
     return (
         <div className={style.startLocationOpenDoor}>
-            <Way url={'/'} way={'вернуться'}/>
+            <Way url={'/startLocation'} way={'вернуться'}/>
             <div className={style.passage}>
                 <div className={style.linkButton}><button></button></div>
                 <div className={style.menuPassage}>

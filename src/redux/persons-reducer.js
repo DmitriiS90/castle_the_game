@@ -2,6 +2,9 @@ const initialState = {
     player: {
         isKing: false,
         chest: 'locked',
+        kingsRoom: false,
+        setClockHands: false,
+        isOpenedLock: false,
         speechInPrison: ['В каком смысле жив? Я должен быть мертвым?', 'Кто ты? Как попал за решетку?', 'Серьезно', 'Красавец'],
         speechWithGuards: ['Пропусти', 'Вы знаете, что со мной случилость', '111', 'Давай ключ'],
     },
@@ -48,6 +51,16 @@ const personsReducer = (state = initialState, action) => {
                 ...state,
                 player: { ...state.player, isKing: true }
             }
+        case 'CHECKED_KINGSROOM':
+            return {
+                ...state,
+                player: { ...state.player, kingsRoom: true }
+            }
+        case 'SET_CLOCK_HANDS':
+            return {
+                ...state,
+                player: { ...state.player, setClockHands: true }
+            }
         case 'GUARDS':
             return {
                 ...state,
@@ -62,6 +75,11 @@ const personsReducer = (state = initialState, action) => {
             return {
                 ...state,
                 player: { ...state.player, chest: 'opened' }
+            }
+        case 'OPEN_LOCK':
+            return {
+                ...state,
+                player: { ...state.player, isOpenedLock: true }
             }
         case 'TALK_TO_INESSA':
             return {

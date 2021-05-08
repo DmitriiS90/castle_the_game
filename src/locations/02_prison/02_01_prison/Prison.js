@@ -7,7 +7,7 @@ import Way from '../../../components/way/Way';
 const Prison = (props) => {
     return (
         <div className={style.prison}>
-            <Way url={'/'} way={'вернуться'}/>
+            <Way url={'/startLocation'} way={'вернуться'}/>
             <div className={style.door}>
                 <div className={style.linkButton}><button></button></div>
                 <div className={style.menuDoor}>

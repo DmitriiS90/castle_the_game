@@ -1,0 +1,27 @@
+.storage {
+    height: 700px;
+    background-image: url(https://farm6.staticflickr.com/5599/15055458684_cd933d7901_b.jpg);
+    background-size: cover;
+}
+.storage p {
+    margin: 0 auto;
+    width: 700px;
+    background-color: rgb(173, 195, 236);
+    border-radius: 15px;
+    border: 7px black solid
+}
+.lock {
+    position:absolute;
+    top: 100px;
+    left: 500px;
+    width: 500px;
+    height: 500px;
+    background-color:slategrey;
+    border-radius: 10px;
+}
+.lock button {
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    margin: 30px;
+}
