@@ -3,3 +3,13 @@
     background-image: url(https://cdn1.ozone.ru/s3/multimedia-1/6012818701.jpg);
     background-size: cover;
 }
+.epilogue p {
+    margin: 0 auto;
+    width: 700px;
+    background-color: rgb(173, 195, 236);
+    border-radius: 15px;
+    border: 7px black solid
+}
+.end:hover {
+    background-color: rgb(248, 76, 8);
+}

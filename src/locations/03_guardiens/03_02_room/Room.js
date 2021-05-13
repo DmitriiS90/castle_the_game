@@ -10,6 +10,7 @@ const Room = (props) => {
     const dispatch = useDispatch()
     const player = useSelector((state) => { return state.persons.player })
     const chestKey = useSelector((state) => { return state.inventory.chestKey })
+    const picture = useSelector((state) => { return state.inventory.picture })
 
     const openChest = () => {
         dispatch({ type: 'USE_CHEST_KEY' })
@@ -23,18 +24,18 @@ const Room = (props) => {
     return (
         <div className={style.room}>
             <Way url={'/roomWithGuards'} way={'Вернуться'} />
-            {text && <p onClick={()=>{setText(false)}}>Вы нашли стрелки и картинку</p>}
+            {text && <p onClick={()=>{setText(false)}}>В сундуке вы нашли стрелки от часов и рисунок. На обратной стороне рисунка есть надпись: Моей любимой дочери, 23 января 1255 год.</p>}
 
             <div className={style.chest}>
                 <div className={style.linkButton}><button></button></div>
-                {/* {!player.chest === 'opened' && */}
+                {!picture &&
                     <div className={style.menuChest}>
                         <ul>
                             {player.chest === 'locked' && <li onClick={() => { dispatch({ type: 'CLICK_CHEST' }) }}>Открыть</li>}
                             {player.chest === 'clicked' && !chestKey && <li>Нужен ключ</li>}
                             {chestKey && <li onClick={() => { openChest() }}>Использовать ключ</li>}
                         </ul>
-                    </div>
+                    </div>}
             </div>
 
             <div className={style.doorToNextRoom}>

@@ -15,13 +15,13 @@ const Hall = (props) => {
             <Way url={'/hallway'} way={'Подняться по лестнице'} />
             <Way url={'/room'} way={'Вернуться'} />
 
-            {text && <p onClick={() => { setText(false) }}>На вас смотрят</p>}
+            {player.inHall && <p onClick={() => { dispatch({ type: 'TEXT_IN_HALL' }) }}>Вы вошли в главный зал. И на вас сразу обратили внимания все присутствующие. Вам постепенно возвращается память и вы узнаете некоторых людей из вашей свиты. Необходимо вычислить заговорщиков.</p>}
 
             {inessa.isClick &&
                 <div>
-                    <p>-Инесса: {inessa.speech[0]}</p>
+                    <p>-Александр и Инесса: {inessa.speech[0]}</p>
                     <ol>
-                        <li onClick={()=>{dispatch({ type: 'OUT_FROM_INESSA' })}}>22222222</li>
+                        <li onClick={()=>{dispatch({ type: 'OUT_FROM_INESSA' })}}>{player.speechWithInessa}</li>
                     </ol>
                 </div>}
 
@@ -29,7 +29,7 @@ const Hall = (props) => {
                 <div>
                     <p>-Едвард: {edvard.speech[0]}</p>
                     <ol>
-                        <li onClick={()=>{dispatch({ type: 'OUT_FROM_EDVARD' })}}>22222222</li>
+                        <li onClick={()=>{dispatch({ type: 'OUT_FROM_EDVARD' })}}>{player.speechWithEdvard}</li>
                     </ol>
                 </div>}
 
@@ -37,7 +37,7 @@ const Hall = (props) => {
                 <div>
                     <p>-Карл: {karl.speech[0]}</p>
                     <ol>
-                        <li onClick={()=>{dispatch({ type: 'OUT_FROM_KARL' })}}>22222222</li>
+                        <li onClick={()=>{dispatch({ type: 'OUT_FROM_KARL' })}}>{player.speechWithKarl}</li>
                     </ol>
                 </div>}
 

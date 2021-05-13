@@ -4,10 +4,11 @@ import { useDispatch, useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 
 const Menu = (props) => {
+    const dispatch = useDispatch()
     
     return (
         <div className={style.menu}>
-            <NavLink to={'/startLocation'}><p>Играть</p></NavLink>
+            <NavLink to={'/startLocation'}><p onClick={() => { dispatch({ type: 'START_GAME' }) }}>Играть</p></NavLink>
         </div>
     )
 }

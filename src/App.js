@@ -17,6 +17,7 @@ import KingsRoom from './locations/04_main_hall/04_03_kings_room/KingsRoom';
 import Storage from './locations/04_main_hall/04_04_storage/Storage';
 import Epilogue from './locations/05_epilogue/Epilogue';
 
+
 const App = (props) => {
   return (
     <div className="App">

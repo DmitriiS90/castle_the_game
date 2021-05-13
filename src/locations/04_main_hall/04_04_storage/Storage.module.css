@@ -8,7 +8,11 @@
     width: 700px;
     background-color: rgb(173, 195, 236);
     border-radius: 15px;
-    border: 7px black solid
+    border: 7px black solid;
+    text-decoration: none;
+}
+.continue:hover {
+    background-color: rgb(248, 76, 8);
 }
 .lock {
     position:absolute;

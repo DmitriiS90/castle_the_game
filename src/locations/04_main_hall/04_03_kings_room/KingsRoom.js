@@ -17,8 +17,8 @@ const KingsRoom = (props) => {
         <div className={style.kingsRoom}>
             <Way url={'/hallway'} way={'Вернуться'} />
             {!player.kingsRoom && <p onClick={() => { dispatch({ type: 'CHECKED_KINGSROOM' }) }}>Вы вошли в свою комноту</p>}
-            {text===1 && <p onClick={() => { setText(0) }}>Часы бес стрелок??</p>}
-            {text===2 && <p onClick={() => { setText(0) }}>Шкаф закрыто</p>}
+            {text===1 && <p onClick={() => { setText(0) }}>Странно, на часах нет стрелок</p>}
+            {text===2 && <p onClick={() => { setText(0) }}>Шкаф закрыт</p>}
 
             <div className={style.watch}>
                 <div className={style.linkButton}></div>
