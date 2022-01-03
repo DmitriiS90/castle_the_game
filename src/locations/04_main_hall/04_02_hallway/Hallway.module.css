@@ -1,6 +1,6 @@
 .hallway {
     height: 700px;
-    background-image: url(https://sun9-43.userapi.com/c856124/v856124327/c2ea1/-WYjUppEKzQ.jpg);
+    background-image: url(./../../../images/locations/11_hallway.jpg);
     background-size: cover;
 }
 
@@ -20,6 +20,7 @@
 }
 .doorToKingsRoom .menu {
     border: black 1px solid;
+    border-radius: 5px;
     background-color: cornsilk;
     visibility: hidden;
     opacity: 0;

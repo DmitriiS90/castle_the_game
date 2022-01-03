@@ -2,29 +2,28 @@ import React from 'react'
 import { connect, useDispatch, useSelector } from 'react-redux'
 import style from './Inventory.module.css'
 
-const Inventory = (props) => {
+const Inventory = ({inventory}) => {
     const dispatch = useDispatch()
     const player = useSelector((state) => { return state.persons.player })
     const startGame = useSelector((state) => { return state.persons.startGame })
-    console.log(startGame)
 
     return (
 
         <div className={style.inventory}>
             {!player.isOpenedLock && startGame &&
-                <>{!props.inventory.isClick && <img onClick={() => { dispatch({ type: 'SET_INVENTORY' }) }} className={style.inventoryImg} src='https://static.vecteezy.com/system/resources/previews/000/613/755/original/vector-axe-icon.jpg' />}
+                <>{!inventory.isClick && <img onClick={() => { dispatch({ type: 'SET_INVENTORY' }) }} className={style.inventoryImg} src='https://static.vecteezy.com/system/resources/previews/000/613/755/original/vector-axe-icon.jpg' />}
 
-                    {props.inventory.isClick &&
+                    {inventory.isClick &&
                         <>
-                            <div className={style.cell}>{props.inventory.chestKey ? <img src='https://cs5.livemaster.ru/storage/7b/cc/fd75b4b7aa87c532df15a58ffdgx--dlya-ukrashenij-podveska-klyuch-vintazhnyj.jpg' /> : null}</div>
-                            <div className={style.cell}>{props.inventory.crowbar ? <img src='https://utmk.ru/wp-content/uploads/2018/07/9707b97e4120.jpg' /> : null}</div>
+                            <div className={style.cell}>{inventory.chestKey ? <img src='https://cs5.livemaster.ru/storage/7b/cc/fd75b4b7aa87c532df15a58ffdgx--dlya-ukrashenij-podveska-klyuch-vintazhnyj.jpg' /> : null}</div>
+                            <div className={style.cell}>{inventory.crowbar ? <img src='https://utmk.ru/wp-content/uploads/2018/07/9707b97e4120.jpg' /> : null}</div>
                             <div className={style.cell}></div>
                             <div className={style.cell}></div>
                             <div className={style.cell}></div>
                             <div className={style.cell}></div>
                             <div className={style.cell}></div>
-                            <div className={style.cell}>{props.inventory.clockHands ? <img src='https://magazinrukodelie.host.webasyst.com/wa-data/public/shop/products/84/86/38684/images/3355/3355.750x0.jpg' /> : null}</div>
-                            <div className={style.cell}>{props.inventory.picture ? <img src='https://i.pinimg.com/originals/45/dd/ff/45ddff4ac7922e5f9da75c49df3ac32d.jpg' /> : null}</div>
+                            <div className={style.cell}>{inventory.clockHands ? <img src='https://magazinrukodelie.host.webasyst.com/wa-data/public/shop/products/84/86/38684/images/3355/3355.750x0.jpg' /> : null}</div>
+                            <div className={style.cell}>{inventory.picture ? <img src='https://i.pinimg.com/originals/45/dd/ff/45ddff4ac7922e5f9da75c49df3ac32d.jpg' /> : null}</div>
                             <img onClick={() => { dispatch({ type: 'REMOVE_INVENTORY' }) }} className={style.inventoryImg} src='https://static.vecteezy.com/system/resources/previews/000/613/755/original/vector-axe-icon.jpg' />
                         </>}
                 </>}

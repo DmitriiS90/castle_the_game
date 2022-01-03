@@ -10,7 +10,7 @@ const Hallway = (props) => {
         <div className={style.hallway}>
             <Way url={'/hall'} way={'Вернуться'} />
             <div className={style.doorToKingsRoom}>
-                <div className={style.linkButton}><button></button></div>
+                <div className={style.linkButton}></div>
                 <div className={style.menu}>
                     <ul>
                         <li><NavLink to='/kingsRoom'>Пройти в свою комноту</NavLink></li>

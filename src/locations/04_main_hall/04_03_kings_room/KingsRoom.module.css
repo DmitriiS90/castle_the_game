@@ -1,6 +1,6 @@
 .kingsRoom {
     height: 700px;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Chambre_%C3%A0_coucher_d%27Anne_d%27Autriche.jpg/1024px-Chambre_%C3%A0_coucher_d%27Anne_d%27Autriche.jpg);
+    background-image: url(./../../../images/locations/12_kingsroom.jpg);
     background-size: cover;
 }
 .kingsRoom p {
@@ -23,8 +23,8 @@
     width: 50px;
 }
 .watch .menu {
-    
     border: black 1px solid;
+    border-radius: 5px;
     background-color: cornsilk;
     visibility: hidden;
     opacity: 0;
@@ -47,8 +47,8 @@
     width: 200px;
 }
 .wardrobe .menu {
-    
     border: black 1px solid;
+    border-radius: 5px;
     background-color: cornsilk;
     visibility: hidden;
     opacity: 0;

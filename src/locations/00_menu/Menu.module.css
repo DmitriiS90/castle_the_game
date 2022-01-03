@@ -1,5 +1,15 @@
 .menu {
     height: 700px;
-    background-image: url(https://im0-tub-ru.yandex.net/i?id=0aafc1534a58bc823cfe0746d9aadf0e-l&ref=rim&n=13&w=1080&h=1350);
+    background-image: url(./../../images/locations/00_menu.jpg);
     background-size: cover;
+}
+.menu p {
+    position: absolute;
+    color: slategrey;
+    top:500px;
+    left: 700px;
+    font-size: 50px;
+}
+.menu p:hover {
+    color: red;
 }

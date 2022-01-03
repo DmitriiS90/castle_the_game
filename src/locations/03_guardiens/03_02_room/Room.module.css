@@ -27,6 +27,7 @@
 }
 .menuChest {
     border: black 1px solid;
+    border-radius: 5px;
     background-color: cornsilk;
     visibility: hidden;
     opacity: 0;
@@ -53,6 +54,7 @@
 }
 .menu {
     border: black 1px solid;
+    border-radius: 5px;
     background-color: cornsilk;
     visibility: hidden;
     opacity: 0;

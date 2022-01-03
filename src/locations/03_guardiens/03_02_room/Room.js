@@ -27,7 +27,7 @@ const Room = (props) => {
             {text && <p onClick={()=>{setText(false)}}>В сундуке вы нашли стрелки от часов и рисунок. На обратной стороне рисунка есть надпись: Моей любимой дочери, 23 января 1255 год.</p>}
 
             <div className={style.chest}>
-                <div className={style.linkButton}><button></button></div>
+                <div className={style.linkButton}></div>
                 {!picture &&
                     <div className={style.menuChest}>
                         <ul>
@@ -39,7 +39,7 @@ const Room = (props) => {
             </div>
 
             <div className={style.doorToNextRoom}>
-                <div className={style.linkButton}><button></button></div>
+                <div className={style.linkButton}></div>
                 <div className={style.menu}>
                     <ul>
                         <li><NavLink to='/hall'>Пройти в главный зал</NavLink></li>

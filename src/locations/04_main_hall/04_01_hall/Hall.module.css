@@ -1,6 +1,6 @@
 .hall {
     height: 700px;
-    background-image: url(http://pm1.narvii.com/7012/337dadf084b71d3387d3600755d24fffc4dc2ae0r1-1680-911v2_uhq.jpg);
+    background-image: url(./../../../images/locations/10_hall.jpg);
     background-size: cover;
 }
 .hall p, .hall ol {

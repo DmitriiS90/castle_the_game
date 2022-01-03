@@ -133,6 +133,5 @@ const personsReducer = (state = initialState, action) => {
     }
 };
 
-// export const clickPersonLocation1 = (key) => {return {type: SET_KEY, key}};
 
 export default personsReducer;

@@ -9,7 +9,7 @@ const Prison = (props) => {
         <div className={style.prison}>
             <Way url={'/startLocation'} way={'вернуться'}/>
             <div className={style.door}>
-                <div className={style.linkButton}><button></button></div>
+                <div className={style.linkButton}></div>
                 <div className={style.menuDoor}>
                     <ul>
                         <li><NavLink to='/skeletons'>Посмотреть</NavLink></li>
@@ -18,7 +18,7 @@ const Prison = (props) => {
             </div>
             
             <div className={style.door2}>
-                <div className={style.linkButton}><button></button></div>
+                <div className={style.linkButton}></div>
                 <div className={style.menuDoor}>
                     <ul>
                         <li><NavLink to='/menInPrison'>Посмотреть</NavLink></li>

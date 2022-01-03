@@ -3,7 +3,7 @@ import style from './StartLocation.module.css'
 import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
 
-const StartLocation = (props) => {
+const StartLocation = () => {
     const dispatch = useDispatch()
 
     const text = useSelector((state) => { return state.persons.startText })
@@ -20,7 +20,7 @@ const StartLocation = (props) => {
 
             {!text.isClick &&
                 <div className={style.door}>
-                    <div className={style.linkButton}><button></button></div>
+                    <div className={style.linkButton}></div>
                     <div className={style.menuDoor}>
                         <ul>
                             <li>Закрыто</li>
@@ -32,7 +32,7 @@ const StartLocation = (props) => {
             }
             {!text.isClick &&
                 <div className={style.passage}>
-                    <div className={style.linkButton}><button></button></div>
+                    <div className={style.linkButton}></div>
                     <div className={style.menuPassage}>
                         <ul>
                             <li><NavLink to='/startLocationOpenDoor'>Пройти</NavLink></li>

@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import style from './Skeletons.module.css'
-import { useDispatch, useSelector } from 'react-redux'
 import Way from '../../../components/way/Way';
 
-const Skeletons = (props) => {
+const Skeletons = () => {
 
     return (
         <div className={style.skeletons}>
